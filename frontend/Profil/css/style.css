@@ -1,0 +1,82 @@
+body {
+  font-family: "poppins", sans-serif;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.profile-picture {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-picture img:hover {
+  transform: scale(1.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #777;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #4caf50;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgba(1, 168, 18);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #555;
+}
+
+.button-container button:active {
+  background-color: rgba(1, 168, 18);
+}

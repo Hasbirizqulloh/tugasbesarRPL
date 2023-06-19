@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Tubes RPL",
+  "main": "index.js",
+  "scripts": {
+    "testing": "echo \"Error: no test specified\" && exit 1",
+    "test-service": "nodemon index.js"
+  },
+  "author": "mohasbi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Quiz</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="up-quiz/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Upload Quiz</h1>
+
+      <form action="quiz/css/after/style.css" method="POST">
+        <label for="quizTitle">Quiz Title:</label>
+        <input type="text" id="quizTitle" name="quizTitle" required />
+
+        <div id="questionsContainer">
+          <div class="question">
+            <label for="question1">Question 1:</label>
+            <input type="text" id="question1" name="question1" required />
+
+            <div class="options">
+              <label for="option1_1">Option 1:</label>
+              <input type="text" id="option1_1" name="option1_1" required />
+
+              <label for="option1_2">Option 2:</label>
+              <input type="text" id="option1_2" name="option1_2" required />
+
+              <label for="option1_3">Option 3:</label>
+              <input type="text" id="option1_3" name="option1_3" required />
+
+              <label for="option1_4">Option 4:</label>
+              <input type="text" id="option1_4" name="option1_4" required />
+            </div>
+
+            <label for="answer1">Correct Answer:</label>
+            <select id="answer1" name="answer1" required>
+              <option value="" disabled selected>Select Correct Answer</option>
+              <option value="option1_1">Option 1</option>
+              <option value="option1_2">Option 2</option>
+              <option value="option1_3">Option 3</option>
+              <option value="option1_4">Option 4</option>
+            </select>
+          </div>
+
+          <div class="question">
+            <label for="question2">Question 2:</label>
+            <input type="text" id="question2" name="question2" required />
+
+            <div class="options">
+              <label for="option2_1">Option 1:</label>
+              <input type="text" id="option2_1" name="option2_1" required />
+
+              <label for="option2_2">Option 2:</label>
+              <input type="text" id="option2_2" name="option2_2" required />
+
+              <label for="option2_3">Option 3:</label>
+              <input type="text" id="option2_3" name="option2_3" required />
+
+              <label for="option2_4">Option 4:</label>
+              <input type="text" id="option2_4" name="option2_4" required />
+            </div>
+
+            <label for="answer2">Correct Answer:</label>
+            <select id="answer2" name="answer2" required>
+              <option value="" disabled selected>Select Correct Answer</option>
+              <option value="option2_1">Option 1</option>
+              <option value="option2_2">Option 2</option>
+              <option value="option2_3">Option 3</option>
+              <option value="option2_4">Option 4</option>
+            </select>
+          </div>
+
+          <div class="question">
+            <label for="question3">Essay Question 1:</label>
+            <textarea id="question3" name="question3"></textarea>
+          </div>
+
+          <div class="question">
+            <label for="question4">Essay Question 2:</label>
+            <textarea id="question4" name="question4"></textarea>
+          </div>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

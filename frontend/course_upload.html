@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Course</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="up-kursus/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Upload Course</h1>
+
+      <form action="quiz/css/after/style.css" method="POST" enctype="multipart/form-data">
+        <label for="courseTitle">Course Title:</label>
+        <input type="text" id="courseTitle" name="courseTitle" required />
+
+        <label for="courseDescription">Course Description:</label>
+        <textarea id="courseDescription" name="courseDescription" required></textarea>
+
+        <label for="courseThumbnail">Course Thumbnail:</label>
+        <input type="file" id="courseThumbnail" name="courseThumbnail" accept="image/*" required />
+
+        <h2>Course Modules:</h2>
+
+        <div class="module">
+          <label for="moduleTitle1">Module 1 Title:</label>
+          <input type="text" id="moduleTitle1" name="moduleTitle1" required />
+
+          <label for="Video1">Video Link:</label>
+          <input type="text" id="moduleVideo1" name="moduleVideo1" required />
+        </div>
+
+        <div class="module">
+          <label for="moduleTitle2">Module 2 Title:</label>
+          <input type="text" id="moduleTitle2" name="moduleTitle2" required />
+
+          <label for="moduleVideo2">Video Link:</label>
+          <input type="text" id="moduleVideo2" name="moduleVideo2" required />
+        </div>
+
+        <input type="submit" value="Upload" />
+      </form>
+    </div>
+  </body>
+</html>
